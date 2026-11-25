@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#0d141b">
+    <meta name="description" content="Lokale startpagina voor PXL, cursussen en beheertools.">
+    <title>Schooldashboard · PXL</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="links.js" defer></script>
+    <script src="dashboard.js" defer></script>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="masthead">
+        <div class="heading">
+          <p class="brand"><span class="brand-icon" aria-hidden="true">▦</span> PXL · STARTPAGINA</p>
+          <h1>School<span>dashboard</span></h1>
+        </div>
+        <div class="search" role="search">
+          <label class="visually-hidden" for="search">Zoek vakken en snelkoppelingen</label>
+          <span class="search-icon" aria-hidden="true"></span>
+          <input id="search" type="search" placeholder="Zoek vak of link…" autocomplete="off" spellcheck="false">
+          <kbd aria-hidden="true">/</kbd>
+        </div>
+      </header>
+
+      <div id="dashboard" class="dashboard"></div>
+      <p id="search-status" class="empty" role="status" aria-atomic="true"></p>
+      <noscript><p class="empty">Schakel JavaScript in om de snelkoppelingen te tonen.</p></noscript>
+    </main>
+  </body>
+</html>
